@@ -1,0 +1,55 @@
+@import url('./reset.css');
+@import url('./formulaio.css');
+@import url('./productos.css');
+
+* {
+    font-family: "Raleway", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+:root {
+    --primary: #6c53ea;
+}
+
+body {
+    display: grid;
+    grid-template-columns: 1fr;
+    height: 100vh;
+    grid-template-areas: 'header' 'main' 'footer';
+    grid-template-rows: 80px auto 100px;
+    background-color: #eef0ff;
+}
+
+main {
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+header {
+    background: var(--primary);
+    align-items: center;
+    display: flex;
+    padding: 0 20px;
+}
+
+header h1 {
+    color: #FFFFFF;
+}
+
+footer {
+    background-color: #dfe4ff;
+    display: grid;
+    text-align: center;
+    padding: 20px 0;
+}
+
+@media (min-width: 800px) {
+    main {
+        /* flex-direction: row-reverse; */
+        display: grid;
+        grid-template-columns: 3fr 2fr;
+        gap: 30px;
+        padding: 0 50px;
+    }
+}

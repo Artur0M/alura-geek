@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./estilos/main.css">
+    <title>AluraGeek</title>
+</head>
+<body>
+    <header>
+        <h1>AluraGeek</h1>
+    </header>
+    <main>
+        <div class="productos">
+            <h1 class="titulo__productos">PRODUCTOS:</h1>
+            <ul class="lista__productos" data-product>
+                <!-- los productos se renderizan aqui -->
+            </ul>
+        </div>
+
+
+        <section class="formulario__container">
+            <div class="titulo__formulario">
+                <h1>AGREGAR<br>PRODUCTO:</h1>
+            </div>
+            <form class="formulario" data-form>
+                <input
+                data-name
+                class="input__nombre"
+                type="text"
+                name="nombre"
+                maxlength="35" 
+                placeholder="nombre..." 
+                required
+                >
+                <input 
+                data-price
+                class="input__precio"
+                type="text"
+                name="precio"
+                id="precio" 
+                placeholder="precio..." 
+                required
+                >
+                <input 
+                data-image
+                class="input__imagen"
+                type="text"
+                name="imagen"
+                placeholder="imagen..." 
+                required
+                >
+                <div class="btn__container">
+                    <button class="btn__enviar" type="submit">Enviar</button>
+                    <button class="btn__limpiar">Limpiar</button>
+                </div>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>Desarrollado por Luis Arturo ospino</p>
+        <span>Alura Latam - 2024</span>
+    </footer>
+    <script src="./js/formulario.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+</html>

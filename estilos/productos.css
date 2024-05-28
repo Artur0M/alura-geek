@@ -1,0 +1,89 @@
+.productos {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    padding: 5px;
+}
+
+.titulo__productos {
+    text-align: center;
+    font-weight: bold;
+    color: #6c53ea;
+}
+
+.lista__productos {
+    display: grid;
+    grid-auto-rows: 18em;
+    grid-template-columns: repeat(auto-fill, minmax(7em, 1fr));
+    column-gap: 3em;
+    padding: 10px;
+}
+
+.card {
+    display: flex;
+    justify-content: center;
+    height: fit-content;
+}
+
+.targetas {
+    border-radius: 10px;
+    display: block;
+    height: fit-content;
+    background-color: #FFFFFF;
+    box-shadow: 1px 5px 10px #c6cbff;
+}
+
+.imagen_container {
+    padding: 15px 12px 0 12px;
+    width: 130px;
+    height: 130px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.img__producto {
+    max-width: max-content;
+    max-height: 140px;
+}
+
+/* .nombre_producto_container {
+    height: 40px;
+    
+} */
+
+.nombre__producto {
+    padding: 0 12px;
+    font-size: .79em;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 130px;
+}
+
+.precio__container {
+    background-color: #c6cbff;
+    padding: 6px 12px;
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+    border-radius: 0  0 12px 12px;
+}
+
+.precio {
+    font-weight: bold;
+}
+
+.btn__borrar__producto img{
+    filter: invert(60%);
+    cursor: pointer;
+}
+
+.btn__borrar__producto img:hover{
+    filter: invert(70%);
+}
+
+.btn__borrar__producto img:active{
+    filter: invert(90%);
+}
